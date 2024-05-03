@@ -2,13 +2,12 @@
 define player = Character("[playername]")
 
 label start:
-    scene bg house_day
-    "In the middle of suburbia, there is a house."
+    scene bg suburbia with fade
+    "In the middle of suburbia, there is a house with a pink roof."
     
-    show sylvie green surprised
+    show house at left
     h "*sigh*"
 
-    "Says the house. It's a house that's seen better days."
     python:
         playername = renpy.input("What is your name?", length=32)
         playername = playername.strip()
