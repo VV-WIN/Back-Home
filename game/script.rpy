@@ -3,13 +3,22 @@ define player = Character("[playername]", color="#78acd9")
 
 label start:
     scene bg suburbia with fade
-    "A long time ago, in a galaxy far, far away..."
-    "In the middle of suburbia, there is a house with a pink roof."
+    "A very long time ago, before the world was as we know it, there was a moment of creation."
+    "On the Home World, there was a family of beings who looked quite like...well, houses."
+    "These beings would spend their days wandering the planet, exploring and learning about the world around them."
+    "They were happy, but they were also curious."
+    "They wanted to know what else was out there, beyond the Home World. And if they could be a home for someone else."
+    "Then one day, a house found themselves in a strange place."
+
+    "In the middle of suburbia on a planet called Earth, there is a house with a pink roof."
     "This house is quite peculiar, as it is the only one in the neighborhood with a pink roof."
     
     show house
-    h "*sigh*"
-
+    h "Here again, I find myself in this strange place."
+    "Manicured lawns, white picket fences, and yet there is something off."
+    "This planet that I've landed on is so different from my own."
+    "Although I look like every other house I know this isn't home, I'm alone."
+    
     python:
         playername = renpy.input("What is your name?", length=32)
         playername = playername.strip()
