@@ -71,16 +71,26 @@ label spacejump:
 
         Which planet will [housename] choose to land on?
     """
+
 menu:
     "Lush green world":
         jump greenworld
 
     "Barren wasteland":
         jump wasteland
+
 label greenworld:
     h "This planet looks beautiful. I think I'll land here."
-    jump landing
+    "You land on the lush green world and find yourself surrounded by vibrant colors and exotic plants."
+    "The air is fresh and clean, and you can hear the sound of birds chirping in the distance."
+    h """
+        This planet is so different from Earth. I wonder what kind of creatures live here.
+
+        I should explore and see what I can find.
+    """
+    
+    jump greenworldlanding
+
 label wasteland:
     h "This planet looks desolate. I think I'll land here."
-    jump landing
-label landing:
+    jump wastelandlanding
