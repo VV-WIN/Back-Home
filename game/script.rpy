@@ -59,4 +59,38 @@ label help:
 
 label spacejump:
 
-    "You jump off the planet and into the vast unknown."
+    """
+        You jump off the planet and into the vast unknown. You're floating through space, and you can see the stars and planets all around you.
+        As you drift further and further away from Earth, you feel a sense of peace and calm wash over you.
+        
+        [housename] closes their eyes and lets themselves drift away, content in the knowledge that they will find their way home.
+
+        After some time, [housename] finds themselves drifting towards two planets. 
+        
+        One is a lush green world with crystal clear waters, and the other is a barren wasteland.
+
+        Which planet will [housename] choose to land on?
+    """
+
+menu:
+    "Lush green world":
+        jump greenworld
+
+    "Barren wasteland":
+        jump wasteland
+
+label greenworld:
+    h "This planet looks beautiful. I think I'll land here."
+    "You land on the lush green world and find yourself surrounded by vibrant colors and exotic plants."
+    "The air is fresh and clean, and you can hear the sound of birds chirping in the distance."
+    h """
+        This planet is so different from Earth. I wonder what kind of creatures live here.
+
+        I should explore and see what I can find.
+    """
+    
+    jump greenworldlanding
+
+label wasteland:
+    h "This planet looks desolate. I think I'll land here."
+    jump wastelandlanding
