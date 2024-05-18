@@ -1,6 +1,9 @@
-﻿define h = Character("[housename]", color="#fb77cf")
-python: 
-  greenworldlanding, wastelandlanding = False, False
+﻿# Characters
+define h = Character("[housename]", color="#fb77cf")
+
+# Choices
+default greenworldlanding = False
+default wastelandlanding = False
 
 label start:
     scene bg suburbia with fade
@@ -33,12 +36,12 @@ label start:
     show house at center with dissolve
     h "I gotta get back to the Home World, but how?"
     
-menu:
-    "Jump off the planet!":
-        jump hop
+    menu:
+        "Jump off the planet!":
+            jump hop
 
-    "Ask for help from the other houses.":
-        jump help
+        "Ask for help from the other houses.":
+            jump help
 
 label hop:
     """
@@ -67,15 +70,25 @@ label spacejump:
         Which planet will [housename] choose to land on?
     """
 
-menu:
-    "Lush green world":
-        jump greenworld
+    menu:
+        if not greenworldlanding:
+            "Lush green world":
+                $ greenworldlanding = True
+                jump greenworld
+        if not wastelandlanding:
+            "Barren wasteland":
+                $ wastelandlanding = True
+                jump wasteland
 
-    "Barren wasteland":
-        jump wasteland
+        "Lush green world":
+            $ greenworldlanding = True
+            jump greenworld
+
+        "Barren wasteland":
+            $ wastelandlanding = True
+            jump wasteland
 
 label greenworld:
-    $ greenworldlanding = True
     h "This planet looks beautiful. I think I'll land here."
     "You land on the lush green world and find yourself surrounded by vibrant colors and exotic plants."
     "The air is fresh and clean, and you can hear the sound of birds chirping in the distance."
@@ -88,6 +101,5 @@ label greenworld:
     jump greenworldlanding
 
 label wasteland:
-    $ wastelandlanding = True
     h "This planet looks desolate. I think I'll land here."
     jump wastelandlanding
