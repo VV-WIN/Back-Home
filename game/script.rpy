@@ -6,26 +6,49 @@ default greenworldlanding = False
 default wastelandlanding = False
 
 label start:
-    scene bg suburbia with fade
+    scene bg space with fade
     """
-        On the Home World, there was a species of beings who looked quite like, well, houses.
+        Far, far away, on a planet unlike our own, there was a species of beings who looked quite like...
+        well, {i}houses{/i}. 
         
-        These beings would spend their days wandering the planet, exploring and learning about the world around them.
+        They called themselves the {b}Home Bodies{/b} and were sentient beings, capable of thought and emotion.
+        Just because they were houses, didn't mean they were any less intelligent than you or I.
 
-        They were happy, but they were also curious. They wanted to know what else was out there beyond the Home World. 
-        And if they could understand what a home is for someone else.
+        In fact, they were quite advanced in their own way!
+        You see, every house had a purpose, a reason for being. 
+
+        Some were cafes, some were schools, some were hospitals.
+        Some were even libraries or museums.
         
-        Then one day, a house found themselves in a strange place. 
-        In the middle of suburbia, there is a house.
+        And they all worked together to create a harmonious society.
+        For the Home Bodies, the concept of {b}home{/b} was a {i}precious{/i} thing.
+        Something that's very important and not to be treated carelessly.
+
+        A home was more than just a building.
+        A home was a place of safety, of comfort, of love.
+        A home is a place where you belong and can live in peace.
+    
+        Quickly, the Home Bodies realize that their planet was home to many other beings.
+        A single tree could be a home to hundreds of creatures, a river could be a home to thousands of fish.
         
-        This house is quite peculiar, as it is the only one in the neighborhood with a pink roof.
+        The Home Bodies believed that it was their duty to protect and care for their world and everything on it.
+        Every living thing on the Home World was precious to them.
+        And every living thing had a right to a home.
+        
+        If their plant was a home to so many, then the universe must be home to countless more.
+    """
+    scene bg suburbia with fade
+
+    """
+        In the middle of suburbia, there was a house that was different from the others.
+        In a sea of identical beige houses, there was one which had a bright pink roof.
     """
     python:
-        housename = renpy.input("What's the house named?", length=32)
+        housename = renpy.input("What is the house's name?", length=32)
         housename = housename.strip()
 
         if not housename:
-            housename = "Housey"
+            housename = "Pinky"
 
     show house with dissolve
     h "Manicured lawns, white picket fences, and yet there is something off."
@@ -71,15 +94,6 @@ label spacejump:
     """
 
     menu:
-        if not greenworldlanding:
-            "Lush green world":
-                $ greenworldlanding = True
-                jump greenworld
-        if not wastelandlanding:
-            "Barren wasteland":
-                $ wastelandlanding = True
-                jump wasteland
-
         "Lush green world":
             $ greenworldlanding = True
             jump greenworld
