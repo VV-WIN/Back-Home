@@ -6,6 +6,7 @@ default greenworldlanding = False
 default wastelandlanding = False
 
 label start:
+    play music "music/back-home.wav"  fadeout 1.0 fadein 1.0
     scene bg space with fade
     """
         Far, far away, on a planet unlike our own, there was a species of beings who looked quite like...
@@ -30,7 +31,9 @@ label start:
     
         Quickly, the Home Bodies realize that their planet was home to many other beings.
         A single tree could be a home to hundreds of creatures, a river could be a home to thousands of fish.
-        
+    """
+    stop music fadeout 1.0
+    """
         The Home Bodies believed that it was their duty to protect and care for their world and everything on it.
         Every living thing on the Home World was precious to them.
         And every living thing had a right to a home.
@@ -38,7 +41,7 @@ label start:
         If their plant was a home to so many, then the universe must be home to countless more.
     """
     scene bg suburbia with fade
-
+    play music "music/intro.wav"  fadeout 1.0 fadein 1.0
     """
         In the middle of suburbia, there was a house that was different from the others.
         In a sea of identical beige houses, there was one which had a bright pink roof.
