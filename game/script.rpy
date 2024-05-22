@@ -11,7 +11,7 @@ label start:
         Far, far away, on a planet unlike our own, there was a species of beings who looked quite like...
         well, {i}houses{/i}. 
         
-        They called themselves the {b}Home Bodies{/b} and were sentient beings, capable of thought and emotion.
+        They called themselves the {b}Home Bodies{/b} and were sentient, capable of thought and emotion.
         Just because they were houses, didn't mean they were any less intelligent than you or I.
 
         In fact, they were quite advanced in their own way!
@@ -51,9 +51,37 @@ label start:
             housename = "Pinky"
 
     show house with dissolve
-    h "Manicured lawns, white picket fences, and yet there is something off."
+    h """
+        Manicured lawns, white picket fences, and yet there is something off.
+        I landed on this planet a long time ago. The natives that lived here were kind and welcoming.
+
+        They respected the land and all the creatures that lived on it. They loved thier home.
+        They were the caretakers of this world, and they lived in harmony with nature.
+
+        Who would have thought that such a peaceful world could change so much in such a short time?
+
+        I've seen this world grow from a lush green paradise to fields of concrete and steel.
+        I've seen the skies turn gray and the air grow thick with pollution.
+
+        I've seen the diversity of life diminish as more and more species go extinct.
+        I've seen the valleys and plains turn into highways, parking lots, and golf courses.
+        
+        I've seen the oceans fill with trash and the ice caps melt.
+        I've seen the rivers run dry and the forests burn.
+
+        I am witnessing the destruction of this world and it breaks my heart.
+        And the humans, they just keep building and building, never stopping to think about the consequences of their actions.
+    """
     show house at right with wiperight
-    h "This planet that I've landed on is so different from my own."
+    h """
+        Humans have come and gone, but I've always been here.
+        Watching, waiting, hoping that one day they will realize the error of their ways.
+
+        But it's been so long, and I'm starting to lose hope.
+        I'm starting to think that maybe they will never change, that maybe they will destroy this world and move on to the next.
+        
+        And what will happen to my home then?
+    """
     show house at left with wipeleft
     h "Although I look like every other house I know this isn't home, I'm alone."
     show house at center with dissolve
@@ -68,7 +96,7 @@ label start:
 
 label hop:
     """
-        With all your might, you jump off the planet Earth!
+        With all their might, [housename] jumps off the planet Earth!
     """
     jump spacejump
 
@@ -81,11 +109,32 @@ label help:
 label spacejump:
     scene bg space with fade
     """
-        You jump off the planet and into the vast unknown. You're floating through space, and you can see the stars and planets all around you.
-        As you drift further and further away from Earth, you feel a sense of peace and calm wash over you.
+        [housename] jumps off the planet and into the vast unknown. They're floating through space.
+        As [housename] drifts further and further away from Earth, they feel a sense of peace and calm wash.
         
-        [housename] closes their eyes and lets themselves drift away, content in the knowledge that they will find their way home.
+        [housename] closes their eyes and let themselves drift. They are weightless, free, and unburdened.
 
+        While they are drifting, they think about all the things they have seen and experienced on Earth.
+        All the beauty and wonder, all the destruction and devastation.
+
+        They think about the humans and how they have treated their planet.
+    """
+    h """ 
+        Earth is a beautiful planet, but it is also a fragile one.
+        I hope that the humans will realize that before it's too late.
+
+        I'll miss you crow. I'll miss you squirrel. I'll miss you tree.
+        I'll miss you river. I'll miss you ocean. I'll miss you bee.
+        I'll miss you otter that swims in the river. 
+        
+        I'll miss you bear and cubs that roam free.
+        I'll miss you spider that spins its web. I'll miss you butterfly that flutters by.
+        
+        I'll miss you whale that sings its song. I'll miss you eagle that soars way up high.
+    """
+
+    """
+        And with that they fall into a deep sleep. 
         After some time, [housename] finds themselves drifting towards two planets. 
         
         One is a lush green world with crystal clear waters, and the other is a barren wasteland.
