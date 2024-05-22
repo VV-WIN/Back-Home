@@ -93,18 +93,18 @@ label spacejump:
         Which planet will [housename] choose to land on?
     """
 
-    menu:
-        "Lush green world":
-            $ greenworldlanding = True
-            jump greenworld
+menu:
+    "Lush green world" if not greenworldlanding:
+        $ greenworldlanding = True
+        jump greenworld
 
-        "Barren wasteland":
-            $ wastelandlanding = True
-            jump wasteland
+    "Barren wasteland" if not wastelandlanding:
+        $ wastelandlanding = True
+        jump wasteland
 
 label greenworld:
     h "This planet looks beautiful. I think I'll land here."
-    "You land on the lush green world and find yourself surrounded by vibrant colors and exotic plants."
+    "[housename] landed on the lush green world. They were surrounded by vibrant colors and exotic plants."
     "The air is fresh and clean, and you can hear the sound of birds chirping in the distance."
     h """
         Wow! This planet is so lush. It reminds me of how Earth used to be.
