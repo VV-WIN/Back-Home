@@ -1,4 +1,8 @@
-﻿# Characters
+﻿# Images
+image spaceplanet = "images/spaceplanet.png"
+image cafe = "images/cafe.png"
+
+# Characters
 define h = Character("[housename]", color="#fb77cf")
 
 # Choices
@@ -7,7 +11,7 @@ default wastelandlanding = False
 
 label start:
     play music "music/back-home.wav"  fadeout 1.0 fadein 1.0
-    scene bg space with fade
+    scene spaceplanet  with fade
     """
         Far, far away, on a planet unlike our own, there was a species of beings who looked quite like...
         well, {i}houses{/i}. 
@@ -17,12 +21,14 @@ label start:
 
         In fact, they were quite advanced in their own way!
         You see, every house had a purpose, a reason for being. 
-
-        Some were cafes, some were schools, some were hospitals.
+    """
+    scene cafe  with fade
+    " Some were cafes, some were schools, some were hospitals."
+    """
         Some were even libraries or museums.
         
         And they all worked together to create a harmonious society.
-        For the Home Bodies, the concept of {b}home{/b} was a {i}precious{/i} thing.
+        For the Home Bodies, the idea of {b}home{/b} was a {i}precious{/i} thing.
         Something that's very important and not to be treated carelessly.
 
         A home was more than just a building.
