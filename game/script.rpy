@@ -25,8 +25,6 @@ label start:
     scene cafe  with fade
     " Some were cafes, some were schools, some were hospitals."
     """
-        Some were even libraries or museums.
-        
         And they all worked together to create a harmonious society.
         For the Home Bodies, the idea of {b}home{/b} was a {i}precious{/i} thing.
         Something that's very important and not to be treated carelessly.
@@ -132,14 +130,14 @@ label spacejump:
         Earth is a beautiful planet, but it is also a fragile one.
         I hope that the humans will realize that before it's too late.
 
-        I'll miss you crow. I'll miss you squirrel. I'll miss you tree.
-        I'll miss you river. I'll miss you ocean. I'll miss you bee.
-        I'll miss you otter that swims in the river. 
+        I'll miss you crow. I'll miss you tree.
+        I'll miss you ocean. I'll miss you bee.
         
-        I'll miss you bear and cubs that roam free.
-        I'll miss you spider that spins its web. I'll miss you butterfly that flutters by.
+        I'll miss you bear and her cubs that roam free.
+        I'll miss you butterfly that flutters by.
         
-        I'll miss you whale that sings its song. I'll miss you eagle that soars way up high.
+        I'll miss you whale that sings its song. 
+        I'll miss you eagle that soars way up high.
     """
 
     """
